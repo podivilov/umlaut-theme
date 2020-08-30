@@ -1,0 +1,21 @@
+<?php return array (
+
+  'index' => 14,
+
+  'display_name' => array (
+    'en' => 'Umlaut',
+    'ru' => 'Умлаут',
+    'uk' => 'Умлаут',
+  ),
+
+  'colors' => array (
+    'background' => '#fff',
+    'headings' => '#000',
+    'text' => '#000',
+    'link' => '#b03000',
+  ),
+
+  'meta_viewport' => 'width=device-width, initial-scale=1',
+  'supports_dark_mode' => false,
+
+); ?>
