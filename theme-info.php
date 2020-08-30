@@ -12,7 +12,7 @@
     'background' => '#fff',
     'headings' => '#000',
     'text' => '#000',
-    'link' => '#b03000',
+    'link' => '#70a0b0',
   ),
 
   'meta_viewport' => 'width=device-width, initial-scale=1',
