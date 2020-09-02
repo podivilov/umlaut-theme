@@ -2458,6 +2458,7 @@ select>.e2-button {
 
 .e2-subscribe-window p {
     font-size: 16px;
+    line-height: 22px;
     margin: 0 0 10px 0;
 }
 
@@ -3838,14 +3839,12 @@ a.nu u {
 }
 
 .header-logo-sticky {
-    display: block;
+    display: inline-block;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 99999;
+    right: 50%;
+    transform: translateX(50%);
+    border: none;
+    z-index: 999999;
 }
 
 .header-logo-sticky a {
@@ -3877,7 +3876,7 @@ a.nu u {
     font-family: p8mono;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .e2-text .note {
         display: none !important;
     }
@@ -3885,4 +3884,10 @@ a.nu u {
     .e2-note h1 {
         font-size: 36px;
     }
+}
+
+.shadow img {
+    -webkit-box-shadow: 0px 10px 48px -16px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 10px 48px -16px rgba(0,0,0,0.25);
+    box-shadow: 0px 10px 48px -16px rgba(0,0,0,0.25);
 }
