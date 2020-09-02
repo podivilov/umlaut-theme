@@ -3876,7 +3876,7 @@ a.nu u {
     font-family: p8mono;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .e2-text .note {
         display: none !important;
     }
