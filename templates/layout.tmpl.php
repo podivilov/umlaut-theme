@@ -1,10 +1,8 @@
 <?php _X ('common-pre') ?>
 
-<div class="common emerge">
+<div class="common">
 
-
-
-<div class="flag">
+<div class="flag emerge">
   <?php _X ('header-pre') ?>
 
   <div class="header-content">
@@ -13,8 +11,25 @@
 
       <div class="title">
 
-          <div class="header-logo-sticky"><a href="https://blog.podivilov.ru/"><img src="https://podivilov.ru/assets/img/logo.svg"></img></a></div>
+        <div class="title-inner">
 
+          <div class="logo-marginal">
+            <?php _T ('user-picture') ?>
+          </div>
+
+          <div class="logo">
+            <?php _T ('user-picture') ?>
+          </div>
+
+          <h1>
+            <?= _A ('<a href="' . $content['blog']['href'] . '"><span id="e2-blog-title">' . $content['blog']['title'] . '</span></a>') ?>
+          </h1>
+
+        </div>
+
+        <?php if ($content['class'] == 'frontpage') { ?>
+          <div id="e2-blog-description"><?= $content['blog']['description'] ?></div>
+        <?php } ?>
       </div>
     </div>
 
@@ -35,7 +50,7 @@
 
 
 
-<div class="content">
+<div class="content emerge">
 
 <?php _T ('heading') ?>
 <?php _T ('theme-preview') ?>
@@ -63,7 +78,7 @@
 
 <div class="footer">
 <?php _X ('footer-pre') ?>
-© <span id="e2-blog-author"><?= @$content['blog']['author'] ?></span>, <?=$content['blog']['years-range']?>
+© <span id="e2-blog-author"><?= @$content['blog']['author'] ?></span>, <?=$content['blog']['years-range']?> <a style="border: none;" class="e2-rss-button" href="https://blog.podivilov.ru/all/subscribe/"><span class="e2-svgi"><?= _SVG ('rss') ?></span></a>
 
 <div class="engine">
 <?= $content['engine']['about'] # please do not remove ?>

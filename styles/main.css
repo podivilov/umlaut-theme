@@ -31,16 +31,16 @@
     --currentItemBackgroundColor: #e8e8e8;
     --windowBackgroundColor: #fff;
     --unsavedIndicatorColor: #b03000;
-    --subscribeButtonBackground: #e8e8e8;
-    --subscribeButtonHoverBackground: #d4d4d4;
+    --subscribeButtonBackground: rgba(231,231,231,0.8);
+    --subscribeButtonHoverBackground: rgba(212,212,212,0.8);
     --subscribeButtonTextColor: #000;
     --maxWidth: 1600px;
     --marginTop: 48px;
     --marginLeft: 2%;
     --marginRight: 2%;
     --marginTopCompact: 16px;
-    --marginLeftCompact: 4%;
-    --marginRightCompact: 4%;
+    --marginLeftCompact: 2%;
+    --marginRightCompact: 2%;
     --displayLogoMarginal: block;
     --displayLogo: none;
     --displayLogoCompact: block;
@@ -328,16 +328,14 @@ a.hover {
     align-items: flex-start;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    max-width: calc(100% - 0px - var(--marginLeft));
+    max-width: calc(100% - var(--marginRight) - var(--marginLeft));
     margin: 0 auto;
-    margin-left: 0;
     height: var(--blogLogoHeight);
 }
 
 @media screen and (max-width: 1023px) {
     .header-content {
         margin: 0 var(--marginRightCompact) 0 var(--marginLeftCompact);
-        margin-left: 0;
         max-width: calc(100% - var(--marginRightCompact) - var(--marginLeftCompact));
         height: var(--blogLogoHeight);
     }
@@ -355,8 +353,6 @@ a.hover {
     display: -ms-flexbox;
     display: flex;
     white-space: nowrap;
-    -ms-transform: translate(0, 50%);
-    transform: translate(0, 50%);
 }
 
 @media screen and (max-width: 1023px) {
@@ -367,16 +363,16 @@ a.hover {
 
 
 /* .logo-marginal {
-      --logoMarginalHrzOffset: 20px;
-      display: var(--displayLogoMarginal);
-      position: absolute;
-      left: calc(-1 * (var(--logoSize) + var(--logoMarginalHrzOffset) * 2));
-      top: 50%;
-      transform: translateY(-50%);
-      width: var(--logoSize);
-      height: var(--logoSize);
-      margin: 0 var(--logoMarginalHrzOffset) 0
-  } */
+    --logoMarginalHrzOffset: 20px;
+    display: var(--displayLogoMarginal);
+    position: absolute;
+    left: calc(-1 * (var(--logoSize) + var(--logoMarginalHrzOffset) * 2));
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--logoSize);
+    height: var(--logoSize);
+    margin: 0 var(--logoMarginalHrzOffset) 0
+} */
 
 @media screen and (max-width: 1023px) {
     .logo-marginal {
@@ -2344,14 +2340,10 @@ select>.e2-button {
     }
 }
 
-.e2-subscribe-sheet {
-    z-index: 999999 !important;
-}
-
 .e2-login-sheet,
 .e2-subscribe-sheet {
     position: fixed;
-    z-index: 998;
+    z-index: 9999999;
     opacity: 0;
     -webkit-font-smoothing: subpixel-antialiased;
     top: 0;
@@ -3043,7 +3035,7 @@ a.nu u {
 .e2-rss-button,
 .e2-rss-button:visited {
     /* border-radius: 3px; */
-    color: var(--subscribeButtonBackground);
+    color: #ff5020;
     /* border: 1px solid; */
     /* border-color: var(--thinRuleColor); */
     padding: 0 2px 1px 3px !important;
@@ -3054,7 +3046,7 @@ a.nu u {
       font-weight: bold;
       letter-spacing: 1px; */
     position: relative;
-    top: -1px;
+    top: -0.25em;
 }
 
 .e2-rss-button:hover,
@@ -3838,27 +3830,6 @@ a.nu u {
     max-width: 1280px;
 }
 
-.header-logo-sticky {
-    display: inline-block;
-    position: fixed;
-    right: 50%;
-    transform: translateX(50%);
-    border: none;
-    z-index: 999999;
-}
-
-.header-logo-sticky a {
-    border: none;
-}
-
-.header-logo-sticky img {
-    height: 52px;
-}
-
-.search-field {
-    display: none;
-}
-
 .e2-text .note {
     float: right;
     width: 25%;
@@ -3866,14 +3837,6 @@ a.nu u {
     font-size: 14px;
     font-family: p8sans;
     line-height: 1.5;
-}
-
-.e2-text .note:before {
-    font-size: 14px;
-    position: absolute;
-    content: "•";
-    transform: translateX(-1.25em);
-    font-family: p8mono;
 }
 
 @media screen and (max-width: 767px) {
