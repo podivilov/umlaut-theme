@@ -1379,6 +1379,8 @@ a.admin-menu-comments-count.hover {
 .e2-note-snippet p {
     max-width: 720px;
     margin: 0 0 4px 0;
+    font-size: 16px;
+    line-height: 22px;
 }
 .e2-note-thumbs {
     padding-bottom: 4px;
@@ -1510,6 +1512,16 @@ a.admin-menu-comments-count.hover {
 .e2-pages .e2-keyboard-shortcut {
     font-size: 14px;
     line-height: 16px;
+}
+@media (prefers-color-scheme: dark) {
+    .e2-pages .e2-keyboard-shortcut, .e2-keyboard-shortcut, .e2-pages-prev, .e2-pages-next {
+        color: silver;
+    }
+}
+@media (prefers-color-scheme: light) {
+    .e2-pages .e2-keyboard-shortcut, .e2-keyboard-shortcut, .e2-pages-prev, .e2-pages-next {
+        color: rgba(0,0,0,0.4);
+    }
 }
 .e2-pages-prev-next a {
     font-size: 12px !important;
@@ -1811,6 +1823,8 @@ a:active.e2-tag {
 .e2-notes-gallery-item-title {
     color: var(--headingsColor);
     margin: 0 0 6px 0;
+    font-size: 16px;
+    line-height: 22px;
 }
 .e2-notes-gallery-item-title-large {
     font-weight: bold;
