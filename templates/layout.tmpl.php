@@ -2,7 +2,9 @@
 
 <div class="common">
 
-<div class="flag emerge">
+
+
+<div class="flag">
   <?php _X ('header-pre') ?>
 
   <div class="header-content">
@@ -28,13 +30,16 @@
         </div>
 
         <?php if ($content['class'] == 'frontpage') { ?>
-          <div id="e2-blog-description"><?= $content['blog']['description'] ?></div>
+          <div id="e2-blog-description"><?= $content['blog']['subtitle'] ?></div>
         <?php } ?>
+
       </div>
     </div>
 
     <div class="spotlight">
-      <span class="admin-links admin-links-floating">
+      <?php #_T_DEFER ('stat') ?>
+
+      <span class="admin-links-floating">
         <?php _T ('author-menu') ?>
       </span>
 
@@ -50,14 +55,13 @@
 
 
 
-<div class="content emerge">
+<div class="content">
 
 <?php _T ('heading') ?>
 <?php _T ('theme-preview') ?>
 <?php _T ('message') ?>
 <?php _T ('welcome') ?>
 <?php _T ('unavailable') ?>
-<?php _T ('drafts') ?>
 <?php _T ('notes') ?>
 <?php _T ('notes-list') ?>
 <?php _T ('tags') ?>
@@ -78,13 +82,21 @@
 
 <div class="footer">
 <?php _X ('footer-pre') ?>
-© <span id="e2-blog-author"><?= @$content['blog']['author'] ?></span>, <?=$content['blog']['years-range']?> <a style="border: none;" class="e2-rss-button" href="https://blog.podivilov.ru/all/subscribe/"><span class="e2-svgi"><?= _SVG ('rss') ?></span></a>
+© <span id="e2-blog-author"><?= @$content['blog']['author'] ?></span>, <?=$content['blog']['years-range']?>
 
 <div class="engine">
 <?= $content['engine']['about'] # please do not remove ?>
 <?php _T_DEFER ('stat') ?>
 </div>
 <div style="padding: 10px;"></div>
+
+<script type="text/javascript">
+if (window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    var likely = document.getElementById("likely");
+    likely.classList.add("likely-light");
+}
+</script>
 
 <?php _X ('footer-post') ?>
 </div>

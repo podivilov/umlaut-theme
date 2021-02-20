@@ -5,7 +5,6 @@
   'display_name' => array (
     'en' => 'Umlaut',
     'ru' => 'Умлаут',
-    'uk' => 'Умлаут',
   ),
 
   'colors' => array (
@@ -16,6 +15,6 @@
   ),
 
   'meta_viewport' => 'width=device-width, initial-scale=1',
-  'supports_dark_mode' => false,
+  'supports_dark_mode' => true,
 
 ); ?>
