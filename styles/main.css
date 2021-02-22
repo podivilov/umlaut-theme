@@ -956,7 +956,8 @@ a.admin-menu-comments-count.hover {
     font-size: 21.4px;
     line-height: 28px;
     font-weight: bold;
-    margin: 0 0 10px 0;
+    /*margin: 0 0 10px 0;*/
+    margin: 0;
 }
 .e2-search {
     white-space: nowrap;
@@ -3824,9 +3825,6 @@ a.top-bar-link:hover {
     font-family: p8sans;
     font-size: 21.4px;
 }
-
-
-
 .e2-note-snippet {
     font-size: 20px;
     line-height: 28px;
@@ -3847,4 +3845,13 @@ a.top-bar-link:hover {
 .e2-note-snippet p b {
     font-family: p8sans, "Helvetica Neue", "Arial", sans-serif;
     font-size: 21.4px;
+}
+.e2-smaller-heading {
+    color: var(--headingsColor);
+    font-family: p8sans, "Helvetica Neue", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    margin: 0 0 16px 0;
+    max-width: 840px;
 }
