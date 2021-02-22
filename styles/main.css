@@ -3805,6 +3805,7 @@ a.top-bar-link:hover {
     margin: auto;
     font-size: 15px;
     line-height: 20px;
+    max-width: 1600px;
 }
 .title #e2-blog-description {
     visibility: hidden;
