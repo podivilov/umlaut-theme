@@ -1288,7 +1288,7 @@ a.admin-menu-comments-count.hover {
 }
 .e2-note-likes {
     font-size: 0;
-    margin: 0 0 10px 0;
+    margin: 0 0 6px 0;
 }
 .e2-note-subscribe-button,
 .e2-note-subscribe-button:visited {
@@ -1322,8 +1322,8 @@ a.admin-menu-comments-count.hover {
 }
 .e2-note-meta {
     margin: 0 0 6px 0;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: var(--smallFontSize);
+    line-height: var(--smallLineHeight);
     font-family: var(--smallFontFamily);
 }
 .e2-note-publish-preview {
@@ -1473,12 +1473,16 @@ a.admin-menu-comments-count.hover {
     .e2-comment-author {
         color: var(--boldColor);
         font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 @media (prefers-color-scheme: dark) {
     .e2-comment-author {
         color: white;
         font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 .e2-comment-author-removed {
@@ -3818,5 +3822,29 @@ a.top-bar-link:hover {
 }
 .e2-text p b {
     font-family: p8sans;
+    font-size: 21.4px;
+}
+
+
+
+.e2-note-snippet {
+    font-size: 20px;
+    line-height: 28px;
+}
+.e2-note-snippet h1 {
+    font-size: 21.4px;
+    line-height: 28px;
+    margin: 0;
+}
+.e2-note-snippet p {
+    font-family: p8serif, "Helvetica Neue", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 0 16px 0;
+    max-width: 840px;
+    margin: 0 0 4px 0;
+}
+.e2-note-snippet p b {
+    font-family: p8sans, "Helvetica Neue", "Arial", sans-serif;
     font-size: 21.4px;
 }
