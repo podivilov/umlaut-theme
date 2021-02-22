@@ -193,7 +193,7 @@ select,
 button {
     font-size: 18px;
     line-height: 26px;
-    font-family: var(--mainFontFamily);
+    font-family: var(--mainFontFamily) !important;
 }
 pre,
 tt,
@@ -1207,6 +1207,9 @@ a.admin-menu-comments-count.hover {
 .e2-note-splitter {
     margin: 0 0 60px;
 }
+.e2-note-list p {
+    line-height: 28px;
+}
 .e2-note h1 {
     transition-property: font-size, line-height;
     transition-duration: var(--time);
@@ -2207,6 +2210,10 @@ select > .e2-button {
 }
 .form-control {
     padding: 0 0 12px 0;
+}
+.form-control textarea {
+    font-size: 16px;
+    line-height: 22px;
 }
 .form-label p {
     margin: 0 0 8px;
