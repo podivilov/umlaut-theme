@@ -193,7 +193,7 @@ select,
 button {
     font-size: 18px;
     line-height: 26px;
-    font-family: var(--mainFontFamily) !important;
+    font-family: var(--mainFontFamily);
 }
 pre,
 tt,
@@ -2211,10 +2211,6 @@ select > .e2-button {
 .form-control {
     padding: 0 0 12px 0;
 }
-.form-control textarea {
-    font-size: 16px;
-    line-height: 22px;
-}
 .form-label p {
     margin: 0 0 8px;
 }
@@ -3861,4 +3857,9 @@ a.top-bar-link:hover {
     line-height: 42px;
     margin: 0 0 16px 0;
     max-width: 840px;
+}
+form[id="form-comment"] textarea {
+    font-family: p8serif;
+    font-size: 20px;
+    line-height: 28px;
 }
