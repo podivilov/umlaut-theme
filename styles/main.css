@@ -32,8 +32,8 @@
     --currentItemBackgroundColor: #e8e8e8;
     --windowBackgroundColor: #fff;
     --unsavedIndicatorColor: #b03000;
-    --subscribeButtonBackground: rgba(231,231,231,0.8);
-    --subscribeButtonHoverBackground: rgba(212,212,212,0.8);
+    --subscribeButtonBackground: rgba(231, 231, 231, .8);
+    --subscribeButtonHoverBackground: rgba(212, 212, 212, .8);
     --subscribeButtonTextColor: #000;
     --maxWidth: 1600px;
     --marginTop: 48px;
@@ -2567,6 +2567,10 @@ select > .e2-button {
 .e2-service-color-odnoklassniki.hover,
 .e2-service-color-pinterest:hover,
 .e2-service-color-pinterest.hover,
+.e2-service-color-youtube:hover,	
+.e2-service-color-youtube.hover,	
+.e2-service-color-tiktok:hover,	
+.e2-service-color-tiktok.hover,
 .e2-service-color-rss:hover,
 .e2-service-color-rss.hover,
 .e2-service-color-jsonfeed:hover,
@@ -2630,10 +2634,6 @@ a.nu u {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-color: inherit;
-}
-a:visited.nu {
-    color: var(--linkColor);
-    border-color: var(--linkUnderlineColor);
 }
 .e2-progress {
     transition: stroke-dashoffset 0.5s ease-out;
