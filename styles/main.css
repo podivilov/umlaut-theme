@@ -3664,16 +3664,12 @@ a.nu u {
     line-height: 28px;
 }
 .e2-text blockquote {
-    padding: 16px 27px 32px 82px;
-    margin: 0 -28px 40px -11px;
-    background-color: #fef4ca;
-    border-radius: 8px;
-    position: relative;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    position: relative;
+    font-size: 26px;
+    line-height: 34px;
+    padding: 10px 0 10px 39px;
+    margin: 20px 0 40px;
+    border-left: 1px var(--thinRuleColor) solid;
+    max-width: 720px;
 }
 .e2-text blockquote::before {
     position: absolute;
