@@ -460,7 +460,7 @@ a.hover {
 }
 .e2-text .foot {
     font-family: var(--mainFontFamily);
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     margin: 8px 0 16px 0;
     max-width: 840px;
@@ -3747,7 +3747,7 @@ a.nu u {
     clear: right;
     font-size: 14px;
     font-family: p8sans;
-    line-height: 1.5;
+    line-height: 20px;
 }
 @media screen and (max-width: 767px) {
     .e2-text .note {
@@ -3859,4 +3859,11 @@ form[id="form-comment"] textarea {
     font-family: p8serif;
     font-size: 20px;
     line-height: 28px;
+}
+.big-button {
+    font-family: p8sans;
+}
+form, input, textarea, select, button {
+    font-size: 16px;
+    line-height: 22px;
 }
