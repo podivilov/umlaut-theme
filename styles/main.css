@@ -3863,7 +3863,3 @@ form[id="form-comment"] textarea {
 .big-button {
     font-family: p8sans;
 }
-form, input, textarea, select, button {
-    font-size: 16px;
-    line-height: 22px;
-}
