@@ -3875,3 +3875,9 @@ mono {
 .goodyear-container {
     font-family: p8sans;
 }
+@media screen and (max-width: 767px) {
+    blockquote {
+        border-left: none !important;
+        padding: 0 !important;
+    }
+}
