@@ -3867,3 +3867,8 @@ form[id="form-comment"] textarea {
 .big-button {
     font-family: p8sans;
 }
+mono {
+    font-family: p8mono;
+    font-size: 18px;
+    line-height: 26px;
+}
