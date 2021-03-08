@@ -455,7 +455,7 @@ a.hover {
     font-size: 30px;
     line-height: 38px;
     padding: 10px 0 10px 0;
-    margin: 20px 0 40px;
+    margin: 28px 0 28px;
     /* border-left: 1px var(--thinRuleColor) solid; */
     max-width: 840px;
     font-family: p8sans;
@@ -3669,7 +3669,7 @@ a.nu u {
     font-size: 26px;
     line-height: 34px;
     padding: 10px 0 10px 39px;
-    margin: 20px 0 40px;
+    margin: 28px 0 28px;
     border-left: 1px var(--thinRuleColor) solid;
     max-width: 720px;
 }
