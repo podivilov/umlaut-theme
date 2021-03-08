@@ -274,6 +274,11 @@ kbd {
     background-color: rgba(27, 31, 35, .05);
     border-radius: 4px;
 }
+@media (prefers-color-scheme: dark) {
+    kbd {
+        background-color: #333;
+    }
+}
 a {
     color: var(--linkColor);
     border-color: var(--linkUnderlineColor);
@@ -301,11 +306,11 @@ a.hover {
 .flag {
     position: relative;
     width: 100%;
-    padding: var(--marginTop) 0 60px;
+    padding: var(--marginTop) 0 40px;
 }
 @media screen and (max-width: 1023px) {
     .flag {
-        padding: var(--marginTopCompact) 0 48px;
+        padding: var(--marginTopCompact) 0 30px;
     }
 }
 .header-content {
@@ -318,18 +323,15 @@ a.hover {
     justify-content: space-between;
     max-width: calc(100% - var(--marginRight) - var(--marginLeft));
     margin: 0 auto;
-    height: var(--blogLogoHeight);
 }
 @media screen and (max-width: 1023px) {
     .header-content {
         margin: 0 var(--marginRightCompact) 0 var(--marginLeftCompact);
         max-width: calc(100% - var(--marginRightCompact) - var(--marginLeftCompact));
-        height: var(--blogLogoHeight);
     }
 }
 .header-description {
     max-width: calc(100% - var(--marginRight) - var(--marginLeft));
-    height: var(--blogLogoHeight);
 }
 .spotlight {
     position: absolute;
@@ -3750,6 +3752,11 @@ a.nu u {
     line-height: 20px;
 }
 @media screen and (max-width: 767px) {
+    .e2-text .note::before {
+        content: "↓ ";
+    }
+}
+@media screen and (max-width: 767px) {
     .e2-text .note {
         width: 100%;
     }
@@ -3802,9 +3809,6 @@ a.top-bar-link:hover {
     font-size: 15px;
     line-height: 20px;
     max-width: 1600px;
-}
-.title #e2-blog-description {
-    visibility: hidden;
 }
 @media (prefers-color-scheme: dark) {
     mark.e2-tag:not([href]), .e2-comment-piece-marked {
