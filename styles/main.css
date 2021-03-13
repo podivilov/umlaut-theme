@@ -3673,15 +3673,6 @@ a.nu u {
     border-left: 1px var(--thinRuleColor) solid;
     max-width: 720px;
 }
-.e2-text blockquote::before {
-    position: absolute;
-    content: "";
-    left: 12px;
-    top: 21px;
-    width: 40px;
-    height: 40px;
-    background: url(images/quote.svg) no-repeat top left;
-}
 .e2-text blockquote p:last-child {
     margin-bottom: 0;
 }
@@ -3770,6 +3761,7 @@ a.nu u {
     box-shadow: 0px 10px 48px -16px rgba(0,0,0,0.25);
 }
 .title-area {
+    display: none;
     background: #32afed;
     color: #fff;
 }
@@ -3786,6 +3778,20 @@ a.top-bar-link {
 a.top-bar-link:hover {
     border-color: rgba(255,255,255,.9);
     transition: none;
+}
+a.top-bar-link.dismiss {
+    display: inline;
+}
+.top-bar-broadcast.mobile {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .top-bar-broadcast {
+        display: none;
+    }
+    .top-bar-broadcast.mobile {
+        display: block;
+    }
 }
 @media screen and (min-width: 1023px) {
     .top-bar-broadcast {
@@ -3876,8 +3882,11 @@ mono {
     font-family: p8sans;
 }
 @media screen and (max-width: 767px) {
-    blockquote {
+    .e2-text blockquote {
         border-left: none !important;
         padding: 0 !important;
     }
+}
+.e2-blog-description {
+    line-height: 24px;
 }
